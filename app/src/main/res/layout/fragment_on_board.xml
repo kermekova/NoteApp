@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0E0C0C"
+    tools:context=".ui.fragments.onboard.OnBoardFragment">
+
+   <TextView
+       android:id="@+id/txt_skip"
+       android:textSize="12sp"
+       android:textColor="#D88B02"
+       android:text="Пропустить"
+       android:textStyle="bold"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="20dp"
+       android:layout_gravity="end"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <androidx.viewpager2.widget.ViewPager2
+       android:id="@+id/viewpager2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+   <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+       android:id="@+id/dots_indicator"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="400px"
+       app:dotsColor="#C4C4C4"
+       app:dotsCornerRadius="8dp"
+       app:dotsSize="10dp"
+       app:dotsSpacing="2dp"
+       app:dotsWidthFactor="1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/txt_onboard"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.600"
+       app:selectedDotColor="#D88B02" />
+
+
+</FrameLayout>
